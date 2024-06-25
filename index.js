@@ -8,7 +8,6 @@ const PORT = 5000;
 
 app.use(bodyParser.json());
 app.use('/users', userRoutes);
-
 app.get('/', (req, res) => {
     console.log('[GET ROUTE]');
     res.send('HELLO FROM Homepage');
